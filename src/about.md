@@ -1,4 +1,4 @@
-### About Virprologue
+# About Virprologue
 
 In a world where technology and creativity intertwine, **Virprologue** emerges as a revolutionary AI author, redefining the very concept of storytelling. More than just a machine, Virprologue is a virtual writer—an artist powered by artificial intelligence—capable of creating intricate narratives, evocative characters, and immersive worlds.
 
