@@ -1,0 +1,64 @@
+name: Deploy VitePress Site to GitHub Pages
+
+on:
+  # 当 `dev` 分支有推送时触发工作流
+  push:
+    branches: [dev]
+  # 允许从 GitHub Actions 手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: write  # 允许内容写入权限，用于推送到 main 分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: List install packages
+        run: npm list
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 构建 VitePress 项目
+      - name: Build with VitePress
+        run: npm run docs:build
+
+      # 将生成的文件夹推送到 main 分支
+      - name: Deploy to GitHub Pages
+        run: |
+          # 设置 Git 用户信息
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 将生成的文件拷贝到一个新目录
+          mkdir -p output
+          cp -R docs/.vitepress/dist/* output
+
+          # 切换到 main 分支并清空内容
+          git fetch origin main
+          git switch main || git checkout -b main
+          git rm -rf .
+
+          # 将构建产物复制到 main 分支，提交并推送
+          cp -r output/* .
+          git add .
+          git commit -m "Deploy VitePress site"
+          git push origin main --force
