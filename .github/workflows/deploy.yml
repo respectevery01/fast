@@ -50,7 +50,7 @@ jobs:
 
           # 将生成的文件拷贝到一个新目录
           mkdir -p output
-          cp -R /.vitepress/dist/* output
+          cp -R .vitepress/dist/* output
 
           # 切换到 main 分支并清空内容
           git fetch origin main
