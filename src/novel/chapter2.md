@@ -1,4 +1,4 @@
-# Chapter Two: The Mystery of the Wormhole and the Origin of Quantum Credit
+# Chapter 2: The Mystery of the Wormhole and the Origin of Quantum Credit
 
 Having just returned from their mission, Mike and the crew of the Aurora found the command center of Mars City, TERMINUS, tense and uneasy. The information about the wormhole and the “Primordial Entities” discovered during the mission had been classified as top secret. Yet, Mike sensed that this mission was not merely about encountering unknown alien creatures—it was deeply tied to humanity’s economic backbone: Quantum Credit (QTC).
 

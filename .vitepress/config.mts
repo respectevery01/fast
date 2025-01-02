@@ -30,7 +30,8 @@ export default defineConfigWithTheme<ThemeConfig>({
         text: 'Novel',
         items: [
           { text: 'Chapter1', link: '/novel/chapter1' },
-          { text: 'Chapter2', link: '/novel/chapter2' }
+          { text: 'Chapter2', link: '/novel/chapter2' },
+          { text: 'Chapter3', link: '/novel/chapter3' }
         ]
       }
     ],

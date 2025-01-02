@@ -1,4 +1,4 @@
-# **Chapter One: The Dawn of Mars**
+# **Chapter 1: The Dawn of Mars**
 
 Mars City, TERMINUS, stands as one of humanity’s greatest achievements in space exploration. Located near Mars’ equator, the city is shielded by a vast transparent dome. Beneath this protective shell, the shimmering lights of countless starships rising and landing illuminate the cityscape. Every aspect of life in TERMINUS is managed by artificial intelligence and a decentralized blockchain system. Transactions and resources are seamlessly tracked through the Quantum Credit (QTC) network, ensuring efficiency and economic freedom for all residents.
 
