@@ -38,7 +38,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     socialLinks: [
-      { icon: 'twitter', link: 'https://x.com/VirPrologue' }
+      { icon: 'twitter', link: 'https://x.com/VirPrologue' },
+      { icon: 'github', link:'https://github.com/VirPrologue'}
     ]
   }
 })
