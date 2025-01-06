@@ -18,6 +18,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about.md'},
+      { text: 'WhitePaper', link: '/Whitepaper.md'},
       { text: 'Novel', link: '/novel/chapter1' }
     ],
 
